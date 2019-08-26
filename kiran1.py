@@ -1,16 +1,12 @@
+def solve(arr):
+	arr.sort();
+	n = len(arr)
+	sumi = n;
+	for j in range(1,n):
+		k = j-1
+		while(k>=0):
+			sumi = sumi+ int(arr[j]/arr[k])
+			k-=1
+	return sumi;
+	
 
-
-t = int(input())
-
-for i in range(t):
-	n = int(input())
-	arr = input()
-	arr = arr.split()
-	arr = [int(a) for a in arr]
-
-	sumi = 0
-	for j in range(n):
-		for k in range(n):
-			sumi = sumi + int(arr[j]/arr[k])
-
-	print(sumi)

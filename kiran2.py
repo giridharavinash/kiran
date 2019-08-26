@@ -1,6 +1,7 @@
-import math
-
 def Solve(N):
-
-	return (math.ceil(2*math.sqrt(N)))
+	ans = 2*(N**(1/2)
+	if int(ans)==ans:
+		 return ans
+	else
+		 return int(ans)+1
 
